@@ -3,6 +3,16 @@
 This repo contains CLI apps developed to integrate and practice new concepts and versioning.
 
 ---
+## Logbook
+
+Simple CLI logbook app to practice system design, C syntax and file manipulation and state machine-based structure.
+
+* User chooses read or write mode
+* Read mode: logbook.txt is diplayed in terminal
+* Write mode: timestamp is generated and new log entry taken via fgets
+* Timestamp mode: computes new timestamp and provides it to write mode via getter
+
+---
 ## Fitness Tracker
 
 Tracks monthly workout consistency.
