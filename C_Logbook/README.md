@@ -26,7 +26,7 @@ This app is meant for practicing embedded C concepts and C syntax without the ha
 	- Reading the logbook
 	- Writing a new log
 
-## Interfaces:
+### Interfaces:
 Menu, read mode and write mode all have interfaces as communication/separation layers between the main task modes. For example, menu_interface.c does not see anything from write.h/.c.
 
 ### Read mode:
@@ -45,24 +45,24 @@ Menu, read mode and write mode all have interfaces as communication/separation l
 
 ## BEHAVIOUR
 ### Execution path for reading, regardless if errors happen:
--> main.c
-	-> menu_interface.c
-		-> read_interface.c
-			-> read.c
-		-> read_interface.c
-	-> menu_interface.c
--> main.c
+* -> main.c
+	* -> menu_interface.c
+		* -> read_interface.c
+			* -> read.c
+		* -> read_interface.c
+	* -> menu_interface.c
+* -> main.c
 
 ### Execution path for writing (if no errors):
--> main.c
-	-> menu_interface.c
-		-> write_interface.c
-			-> write.c
-				-> timestamp.c
-			-> write.c
-		-> write_interface.c
-	-> menu_interface.c
--> main.c
+* -> main.c
+	* -> menu_interface.c
+		* -> write_interface.c
+			* -> write.c
+				* -> timestamp.c
+			* -> write.c
+		* -> write_interface.c
+	* -> menu_interface.c
+* -> main.c
 
 ## Topics practiced
 ### Execution path/flow control:
